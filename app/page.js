@@ -1,8 +1,15 @@
-import { Header } from ".components/Header";
+import { Countents } from "./components/Countents";
+import { LighSwitch } from "./components/LightSwitch";
+import { SecretMessage } from "./components/SecretMessage";
 export default function Home() {
   return (
-    <div classname="min-h-screen bg-slate-50 text-slate-900">
-      <Header />
-    </div>
+    <main className="min-h-screen bg-slate-100 px-6 py-12 text-slate-900">
+      <h1 className="text-center text-3xl font-bold">useState</h1>
+      <div className="mx-auto mt-10 grid max-w-4xl items-start gap-10 md:grid-cols-3 ">
+        <Countents />
+        <LighSwitch />
+        <SecretMessage />
+      </div>
+    </main>
   );
 }
